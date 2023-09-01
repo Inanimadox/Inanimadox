@@ -5,15 +5,34 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body
+{
+    background: #1c1d22;
+    height: 2000px;
+}
+
     @media screen and (min-width: 1080px) {
 
 
 #container {
+
     height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #1c1d22;
+
+    background-image: url("assets/Fotoinicio.jpg");
+    background-color: hsla(230, 10%, 12%, 1 );
+}
+
+.Wallpaper
+{
+
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 #circle {
@@ -86,6 +105,14 @@
     border: 2px solid hsla(230, 100%, 68%, 1);
 }
 
+#navbar ul .inicio
+{
+
+    font-size: 300px;
+
+}
+
+
 #aSide {
 
     height: 800px;
@@ -93,23 +120,48 @@
     position: absolute;
     top: -200px;
     right: -140px;
-    transform: rotateZ(45deg);
+
     display: grid;
     place-items: center;
-}
-
-#aSide img {
-    height: 400px;
-    transform: rotateZ(10deg);
-    position: absolute;
-    top: 33%;
     filter: drop-shadow(-40px -40px 4px rgba(0, 0, 0, 0.4));
     transition: 2s;
     cursor: pointer;
 }
 
-#aSide img:hover {
+#aSide img {
+    
+    
+    position: absolute;
+
+    
+    
+}
+
+#aSide:hover {
+    transition: 2s;
+    cursor: pointer;
     filter: drop-shadow(40px 40px 4px rgba(0, 0, 0, 0.4));
+}
+
+.pols
+{
+    top: 33%;
+    transform: rotateZ(45deg);
+    height: 400px;
+
+    z-index: 4;
+}
+
+.Pol1
+{   
+    position: relative;
+    z-index: 2;
+    left: 37.5%;
+    top:37.5%;
+    transform: rotateZ(23deg);
+    width: 185px;
+        
+
 }
 
 #content {
@@ -189,5 +241,10 @@
     background: hsla(230, 100%, 68%, 1);
     color: #1c1d22;
 }
+    
+.lineaje
+{
 
+     border: 1px solid hsla(230, 100%, 68%, 1);
+}
 }
