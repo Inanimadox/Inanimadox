@@ -90,11 +90,14 @@ body
 
 #navbar ul .active {
     border: 2px solid hsla(230, 100%, 68%, 1);
+    background-color: hsla(230, 100%, 68%, 1);
+
     transition: 0.5s;
 }
 
 #navbar ul .active a {
     font-size: 20px;
+    color: black;
 }
 
 #navbar ul:hover .active {
@@ -246,5 +249,4 @@ body
 {
 
      border: 1px solid hsla(230, 100%, 68%, 1);
-}
 }
