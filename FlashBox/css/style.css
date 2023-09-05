@@ -89,15 +89,15 @@ body
 }
 
 #navbar ul .active {
-    border: 2px solid hsla(230, 100%, 68%, 1);
-    background-color: hsla(230, 100%, 68%, 1);
+    border: 2px solid hsla(230, 100%, 56%, 1);
+    background-color: hsla(37, 100%, 45%, 1);
 
     transition: 0.5s;
 }
 
 #navbar ul .active a {
     font-size: 20px;
-    color: black;
+    color: hsla(230, 10%, 12%, 1);
 }
 
 #navbar ul:hover .active {
@@ -105,13 +105,21 @@ body
 }
 
 #navbar ul .active:hover {
-    border: 2px solid hsla(230, 100%, 68%, 1);
+    border: 2px solid hsla(37, 100%, 40%, 1);
+    background-color: hsla(230, 100%, 56%, 1);
 }
 
-#navbar ul .inicio
+#navbar ul .inicio:hover 
 {
 
-    font-size: 300px;
+    border:2px solid hsla(37, 100%, 40%, 1);
+
+}
+
+#navbar ul .Font
+{
+
+    font-size: 25px;
 
 }
 
@@ -172,14 +180,17 @@ body
     width: 720px;
     position: absolute;
     top: calc(50% - 200px);
-    left: 7%;
+    left: 3%;
      
 }
 
 #content h2 {
     font-size: 12vh;
     line-height: 100px;
+    color: hsla(37, 100%, 53%, 1);
+    /*
     color: hsla(230, 100%, 68%, 1);
+    */
 }
 
 #content h2 b {
@@ -249,4 +260,61 @@ body
 {
 
      border: 1px solid hsla(230, 100%, 68%, 1);
+}
+
+/* inicio de zona de texto */
+
+.inform1
+{
+
+    color: white;
+    left:5%;
+    top: 4%;
+    position: relative;
+    border: 1px solid white;
+
+    width: 50%;
+    height: 500px;
+
+
+}
+
+.inform1 h1
+{
+
+    position: relative;
+    top: 5%;
+    left: 45%;
+
+}
+
+.inform1 p
+{
+    position: relative;
+    top: 7.5%;
+    left: 5%;
+
+    padding-right: 6%;
+    font-size: 20px;
+    
+}
+
+.inform1 ul
+{
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inform1 ul li 
+{
+    height: 60px;
+    width: 130px;
+    margin: 0 10px;
+    display: inline-flex;
+    place-items: center;
+    border-radius: 90px;
+    transition: 0.5s;
 }
