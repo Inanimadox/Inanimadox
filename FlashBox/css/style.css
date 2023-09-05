@@ -264,6 +264,25 @@ body
 
 /* inicio de zona de texto */
 
+.list
+{
+
+    color: white;
+    left:5%;
+    top: 4%;
+    position: relative;
+    border: 2px solid red;
+
+    width: 50%;
+    height: 500px;
+
+        list-style: none;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
 .inform1
 {
 
@@ -276,6 +295,7 @@ body
     width: 50%;
     height: 500px;
 
+       
 
 }
 
@@ -299,7 +319,7 @@ body
     
 }
 
-.inform1 ul
+.List
 {
 
     list-style: none;
@@ -308,13 +328,27 @@ body
 
 }
 
-.inform1 ul li 
+.List ul li 
 {
-    height: 60px;
-    width: 130px;
+    
     margin: 0 10px;
     display: inline-flex;
     place-items: center;
     border-radius: 90px;
     transition: 0.5s;
+}
+
+.inform2
+{
+
+    color: white;
+    left:5%;
+    top: 4%;
+    position: relative;
+    border: 1px solid white;
+
+    width: 50%;
+    height: 500px;
+
+
 }
