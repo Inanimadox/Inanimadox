@@ -1,0 +1,75 @@
+::-webkit-scrollbar 
+
+{
+    display: none;
+}
+
+*
+{
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+    #textH2
+    {
+    font-size: 50px;
+    }
+
+        /*CREAR CUENTA*/
+
+
+    .container 
+    {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      z-index: 1;
+    }
+
+    .container h2 
+    {
+      text-align: center;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="password"] 
+    {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .container input[type="submit"]
+     {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .container input[type="submit"]:hover 
+    {
+      background-color: #45a049;
+    }
+    
+        /* CARD */
+
+    #card 
+    {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    }
+    
+    #card:hover 
+    {
+    transform: scale(1.05);
+    }
