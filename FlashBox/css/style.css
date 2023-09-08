@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+
+
 }
 
 body
@@ -264,7 +266,7 @@ body
 
 /* inicio de zona de texto */
 
-.list
+.List
 {
 
     color: white;
@@ -273,26 +275,41 @@ body
     position: relative;
     border: 2px solid red;
 
-    width: 50%;
-    height: 500px;
-
-        list-style: none;
+    width: 90vw;
+    height: 505px;
     display: flex;
-    flex-direction: row;
 
 
+    list-style: none;
+    flex-direction: column;
 }
+
+.List ul 
+{
+    
+    margin: 0 10px;
+    display: inline-flex;
+    
+    border-radius: 90px;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    list-style: none;
+    
+}
+
 
 .inform1
 {
 
     color: white;
-    left:5%;
-    top: 4%;
+    
     position: relative;
+
     border: 1px solid white;
 
-    width: 50%;
+    width: 375px;
     height: 500px;
 
        
@@ -319,36 +336,38 @@ body
     
 }
 
-.List
-{
-
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.List ul li 
-{
-    
-    margin: 0 10px;
-    display: inline-flex;
-    place-items: center;
-    border-radius: 90px;
-    transition: 0.5s;
-}
-
 .inform2
 {
 
     color: white;
-    left:5%;
-    top: 4%;
+ 
+    
     position: relative;
+
     border: 1px solid white;
 
-    width: 50%;
+    width: 375px;
     height: 500px;
 
+}
+
+.inform2 h1
+{
+
+    position: relative;
+    top: 5%;
+    left: 45%;
+
+}
+
+.inform2 p
+{
+
+    position: relative;
+    top: 7.5%;
+    left: 5%;
+
+    padding-right: 6%;
+    font-size: 20px;
 
 }
