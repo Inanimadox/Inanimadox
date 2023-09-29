@@ -210,6 +210,36 @@
         <h2 class="titulo-final">&copy; Ciro Y Arduinos.company | [ Bianco Vera Inán ] [ Cat GPT]</h2>
     </footer>
     <script src="JavaScript/Main.js"></script>
+
+    <?php
+    $servername = "localhost";
+    $database = "wi";
+    $username = "root";
+    $password = "";
+
+    $conexion = mysqli_connect($servername, $username, $password, $database);
+
+    if (!$conexion) {
+        die("Error de conexión: " . mysqli_connect_error());
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        $Nombre = $_POST['Nombre'];
+        $Email = $_POST['Email'];
+        $Contraseña = $_POST['Contraseña'];
+        $SQL = "INSERT INTO usuarios(usuario, correo, Contraseña) VALUES('$Nombre', '$Email', '$Contraseña')";
+
+        if (mysqli_query($conexion, $SQL)) {
+            echo "Nuevo usuario registrado correctamente"; header(Location:"https://fus3d.com.ar");
+        } else {
+            echo "Error al registrar el usuario: " . mysqli_error($conexion);
+        
+        }
+    }
+
+    mysqli_close($conexion);
+    ?>
+
     
 </body>
 </html>
