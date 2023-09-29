@@ -243,15 +243,19 @@ body
 }
 
 #socialIcons i {
-    height: 60px;
-    width: 60px;
+
     display: grid;
     place-items: center;
-    border-radius: 50%;
+
+    border-radius: 5px;
+    padding: 10px;
     font-size: 25px;
     margin: 0 35px;
     color: #fed104;
     cursor: pointer;
+
+        flex-direction: row;
+    justify-content: space-around;
 }
 
 #socialIcons i:hover {
