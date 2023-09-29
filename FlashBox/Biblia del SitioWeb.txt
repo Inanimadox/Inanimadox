@@ -1,0 +1,69 @@
+Página de Inicio:
+Encabezado:
+
+Logo de tu empresa.
+Menú de navegación con enlaces a "Inicio", "Saber Más", "Funciones", "Presupuesto" y "Contacto".
+Botón de llamada a la acción (CTA) para reservar la cabina fotográfica.
+Banner Principal:
+
+Imagen atractiva de la cabina fotográfica en acción.
+Texto llamativo que destaque los beneficios de alquilar tu cabina (como diversión garantizada para los invitados y recuerdos inolvidables).
+Sección "¿Por qué elegirnos?":
+
+Lista de razones para elegir tu servicio, como calidad de las fotos, accesorios divertidos, fácil configuración, etc.
+Página de "Saber Más":
+Información sobre la Cabina Fotográfica:
+
+Descripción detallada de la cabina, características técnicas y accesorios incluidos.
+Galería de imágenes y/o vídeos mostrando diferentes eventos en los que se ha utilizado la cabina.
+Testimonios:
+
+Opiniones de clientes anteriores que han utilizado tu servicio.
+Proceso de Reserva:
+
+Pasos para reservar la cabina, incluyendo el proceso de pago y las fechas disponibles.
+Información sobre las tarifas y paquetes disponibles.
+Página de "Funciones":
+Funciones de la Cabina Fotográfica:
+
+Detalles sobre las funciones específicas de la cabina, como impresiones instantáneas, opciones de personalización, fondos y filtros.
+Ejemplos de Temas y Diseños:
+
+Muestra ejemplos de diseños personalizados que los clientes pueden elegir para sus impresiones.
+Guía de Uso:
+
+Instrucciones sencillas sobre cómo los invitados pueden usar la cabina durante el evento.
+Página de "Presupuesto":
+Calculadora de Presupuesto:
+
+Una herramienta interactiva que permite a los clientes calcular el costo estimado basado en factores como la duración del evento y los servicios adicionales requeridos.
+Detalles de Precios:
+
+Tarifas básicas y descripción de lo que está incluido en el precio estándar.
+Precios adicionales por horas extras, accesorios especiales, personalización adicional, etc.
+Página de Contacto:
+Formulario de Contacto:
+
+Campos para el nombre, dirección de correo electrónico, número de teléfono y mensaje.
+Información de Contacto:
+
+Dirección física de la empresa (si aplica), dirección de correo electrónico y número de teléfono.
+Enlaces a Redes Sociales:
+
+Enlaces a tus perfiles de redes sociales para que los clientes puedan seguirte y ver más ejemplos de tu trabajo.
+Consejos Adicionales:
+Optimización para Dispositivos Móviles:
+
+Asegúrate de que tu sitio web sea totalmente funcional y fácil de usar en dispositivos móviles y tabletas.
+Diseño Atractivo:
+
+Utiliza colores y elementos visuales que estén en línea con la temática de tu negocio y que resulten atractivos para tus clientes potenciales.
+SEO (Optimización para Motores de Búsqueda):
+
+Investiga palabras clave relevantes y úsalas en el contenido de tu sitio web para mejorar tu visibilidad en los motores de búsqueda como Google.
+Política de Privacidad y Términos de Servicio:
+
+Asegúrate de tener páginas dedicadas para la política de privacidad y los términos de servicio para establecer la confianza con tus clientes.
+Galería de Fotos:
+
+Crea una sección separada para mostrar ejemplos de las fotos tomadas en eventos anteriores para que los clientes puedan ver la calidad de tu trabajo.
