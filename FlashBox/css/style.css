@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-
+    
 
 }
 
@@ -268,9 +268,6 @@ body
 
      border: 1px solid hsla(230, 100%, 68%, 1);
 }
-
-/* inicio de zona de texto */
-
 .List
 {
 
@@ -323,7 +320,7 @@ body
 
 .inform1 h1
 {
-
+    color: white;
     position: relative;
     top: 5%;
     left: 45%;
@@ -335,7 +332,7 @@ body
     position: relative;
     top: 7.5%;
     left: 5%;
-
+    color: white;
     padding-right: 6%;
     font-size: 20px;
     
@@ -344,13 +341,9 @@ body
 .inform2
 {
 
-    color: white;
- 
-    
+    color: white; 
     position: relative;
-
     border: 1px solid white;
-
     width: 375px;
     height: 500px;
 
@@ -358,7 +351,6 @@ body
 
 .inform2 h1
 {
-
     position: relative;
     top: 5%;
     left: 45%;
@@ -367,12 +359,161 @@ body
 
 .inform2 p
 {
-
     position: relative;
     top: 7.5%;
     left: 5%;
-
     padding-right: 6%;
     font-size: 20px;
+    color: white;
 }
 }
+
+.styled-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: solid hsla(230, 100%, 68%, 1);
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    padding-bottom: 5vh;
+    font-size: 17px;
+    color: black;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Para las imágenes dentro de .image-content */
+.image-content img {
+    width: 40vw; /* Establece el ancho máximo de la imagen a 100 píxeles */
+    height: 50vh;
+}
+
+/* Para la imagen dentro de #aSide */
+#aSide img {
+    max-width: 20vw; /* Establece el ancho máximo de la imagen a 50 píxeles */
+    height: auto;
+}
+
+
+#seccionConTitulo h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top:2vh;
+}
+.text-content h3 {
+  color: white;
+  padding-bottom: 1vh;
+}
+.text-content p {
+  color: white;
+  font-size: 20px;
+}
+.text-content li {
+  color: white;
+  font-size: 19px;
+}
+
+.text-content li {
+  padding-top: 2vh;
+}
+
+.background-section {
+    background-image: url('C:/Users/estudiante/Documents/GitHub/Inanimadox/FlashBox/foto1.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color del texto */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del 100% del viewport (ventana visible) */
+}
+
+.text-overlay {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente para el texto (aumenta la opacidad) */
+    padding: 20px;
+    max-width: 80%; /* Ancho máximo del contenedor del texto */
+}
+
+.text-overlay h2 {
+    font-size: 36px;
+    font-weight: bold; /* Texto en negrita para resaltar */
+    margin-bottom: 10px;
+    color: #ffcc00; /* Color amarillo para el título */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
+}
+
+.text-overlay p {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    line-height: 1.5; /* Espaciado entre líneas para una mejor legibilidad */
+}
+
+#seccionContactos {
+    background-color: solid hsla(230, 100%, 68%, 1);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contenido-contactos {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contenido-contactos h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.contenido-contactos p {
+    font-size: 18px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.informacion-contacto p {
+    font-size: 18px;
+    color: orange; /* Color azul para los enlaces */
+    margin: 5px 0;
+}
+
+.informacion-contacto a {
+    text-decoration: none;
+    color: #007bff; /* Color azul para los enlaces */
+    transition: color 0.3s ease;
+}
+
+.informacion-contacto a:hover {
+    color: #0056b3; /* Color azul más oscuro al pasar el ratón sobre los enlaces */
+}
+
+#seccionConFondo .text-overlay button {
+    background-color: solid hsla(230, 100%, 68%, 1); /* Color de fondo verde */
+    color: black; /* Color del texto blanco */
+    font-size: 18px;
+    padding: 20px 24px; /* Espaciado interno del botón (20px arriba, 12px derecha/izquierda, 12px abajo) */
+    border: none;
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo al pasar el ratón */
+}
+
+#seccionConFondo .text-overlay button:hover {
+    background-color: solid hsla(230, 100%, 68%, 1); /* Cambia el color de fondo del botón al pasar el ratón */
+}
+
+
+
+
