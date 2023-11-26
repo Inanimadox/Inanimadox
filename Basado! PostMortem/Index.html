@@ -4,37 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bazado - Bazar de Productos Decorativos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Bazado</h1>
+        <h3>Deco Mayorista y Minorista de Productos Decorativos</h3>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
-                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="Inicio_de_secion/login.html">Iniciar Sesión</a></li>
                 <li><a href="registro.html">Registrarse</a></li>
+
+                <!-- Añade el campo de búsqueda y el botón en el menú -->
+                <div id="search-container">
+                    <input type="text" id="search-bar" placeholder="Buscar productos...">
+                    <button id="search-button" onclick="searchProducts()">Buscar</button>
+                </div>
+
+                <li id="cart-icon" onclick="toggleCart()">🛒</li>
             </ul>
         </nav>
     </header>
 
-<!-- En el archivo index.html -->
-<main>
-    <div id="products" class="product-container">
-        <!-- Las tarjetas de productos se agregarán aquí dinámicamente -->
-    </div>
-    <div id="cart" class="cart-container">
-        <!-- El contenido del carrito de compras se mostrará aquí -->
-    </div>
-</main>
-
-
+    <main id="main-content">
+        <div id="products" class="product-container">
+            <!-- Las tarjetas de productos se agregarán aquí dinámicamente -->
+        </div>
+        <div id="cart" class="cart-container">
+            <!-- El contenido del carrito de compras se mostrará aquí -->
+            <div id="cart-content"></div>
+            <div id="cart-summary">
+                <p>Total de productos: <span id="total-products">0</span></p>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2023 Bazado. Todos los derechos reservados.</p>
     </footer>
-     <script src="script.js"></script>
+
+    <script>
+        // Al cargar la página, muestra todos los productos
+        displayProducts();
+    </script>
+
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>

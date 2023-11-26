@@ -364,7 +364,7 @@ body
     left: 5%;
     padding-right: 6%;
     font-size: 20px;
-    color: white;
+    color: black;
 }
 }
 
@@ -451,12 +451,14 @@ body
     margin-bottom: 10px;
     color: #ffcc00; /* Color amarillo para el título */
     font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
+    padding-bottom: 10px;
 }
 
 .text-overlay p {
     font-size: 18px;
     font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
     line-height: 1.5; /* Espaciado entre líneas para una mejor legibilidad */
+    padding-bottom: 20px;
 }
 
 #seccionContactos {
@@ -474,12 +476,12 @@ body
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: orange;
+    color: white;
 }
 
 .contenido-contactos p {
     font-size: 18px;
-    color: orange;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -499,21 +501,189 @@ body
     color: #0056b3; /* Color azul más oscuro al pasar el ratón sobre los enlaces */
 }
 
-#seccionConFondo .text-overlay button {
-    background-color: solid hsla(230, 100%, 68%, 1); /* Color de fondo verde */
-    color: black; /* Color del texto blanco */
-    font-size: 18px;
-    padding: 20px 24px; /* Espaciado interno del botón (20px arriba, 12px derecha/izquierda, 12px abajo) */
-    border: none;
-    border-radius: 5px; /* Esquinas redondeadas */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo al pasar el ratón */
 }
 
-#seccionConFondo .text-overlay button:hover {
-    background-color: solid hsla(230, 100%, 68%, 1); /* Cambia el color de fondo del botón al pasar el ratón */
+#botonPresupuestar {
+    background-color: white; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    padding: 15px 32px; /* Espaciado interno del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Tamaño del texto */
+    border: none;
+    border-radius: 5px; /* Borde redondeado del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
 }
 
+#botonPresupuestar:hover {
+    background-color: #45a049; /* Cambia el color de fondo cuando el mouse está sobre el botón */
+}
 
+/* Estilos para el pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
 
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Ancho máximo del pop-up */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-align: center;
+}
 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mensaje {
+    resize: none;
+}
+
+.seccionTarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.elemento {
+    flex: 1;
+    margin: 10px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.textoVertical {
+    text-align: center;
+}
+
+.textoVertical h3,
+.textoVertical p {
+    margin: 10px 0;
+}
+
+.seccionTarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.elemento {
+    flex: 1;
+    margin: 10px;
+}
+
+.card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 550px;
+}
+
+.card1 {
+    background-image: url('C:/Users/estudiante/Documents/GitHub/Inanimadox/FlashBox/foto5.jpg');
+}
+
+.card2 {
+    background-image: url('imagen2.jpg');
+}
+
+.textoTarjeta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0.9; /* Opacidad del fondo */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1); /* Fondo opaco más oscuro */
+    border-radius: 10px;
+}
+
+#botonPresupuestar {
+    background-color: orange; /* Color de fondo del botón */
+    border: none; /* Sin bordes */
+    color: white; /* Color del texto */
+    padding: 10px 28px; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block;
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Márgenes externos */
+    transition-duration: 0.4s; /* Duración de la transición al pasar el mouse */
+    cursor: pointer; /* Cursor tipo puntero */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#botonPresupuestar:hover {
+    background-color: ; /* Cambia el color de fondo al pasar el mouse */
+}

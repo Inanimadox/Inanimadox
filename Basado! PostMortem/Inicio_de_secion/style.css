@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(113, 0%, 8%, 1);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos del menú */
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff8c00; /* Color naranja */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+nav ul li#cart-icon {
+    margin-left: auto; /* Mueve el ícono del carrito a la derecha */
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: orange;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+.separator {
+    margin: 0 20px;
+    color: #777;
+}

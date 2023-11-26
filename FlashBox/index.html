@@ -79,11 +79,60 @@
 
 <div id="seccionConFondo" class="background-section">
     <div class="text-overlay">
-        <h2>Reserva Ahora</h2>
+        <h2>Presupuesto</h2>
         <p>¡No esperes más para hacer de tu evento algo inolvidable! Ponte en contacto con nosotros para reservar nuestra cabina fotográfica y asegúrate de que tus invitados se lleven a casa sonrisas y recuerdos inolvidables.</p>
-        <a href="formulario-de-reserva.html"><button>Reservar Ahora</button></a>
+        <button id="botonPresupuestar">Presupuestar</button>
     </div>
 </div>
+
+<div id="popupFormulario" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="cerrarPopupFormulario()">&times;</span>
+        <h2>Formulario de Presupuesto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+
+<div class="seccionTarjetas">
+    <div class="elemento">
+        <div class="card card1">
+            <div class="textoTarjeta">
+                <h3>Manual De Uso</h3>
+                <p>En este manual puedes encontrar un paso a paso del uso de la aplicación</p>
+                <a href="C:/Users/estudiante/Documents/GitHub/Inanimadox/FlashBox/Manual de usuario.pdf">
+                <button id="botonPresupuestar">Descargar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="elemento">
+        <div class="card card1">
+            <div class="textoTarjeta">
+                <h3>Manual De Ensamblaje</h3>
+                <p>En este manual puedes encontrar un paso a paso del uso de la aplicación</p>
+                <a href="C:/Users/estudiante/Documents/GitHub/Inanimadox/FlashBox/Manual de Ensamblaje.pdf">
+                <button id="botonPresupuestar">Descargar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 
 <div id="seccionContactos">
@@ -100,11 +149,40 @@
 </div>
 
 
-
-
-
-
-
-
 </body>
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtén el pop-up
+    var popup = document.getElementById('popupFormulario');
+
+    // Obtén el botón que abre el pop-up
+    var botonPresupuestar = document.getElementById('botonPresupuestar');
+
+    // Obtén el elemento <span> que cierra el pop-up
+    var span = document.getElementsByClassName('close')[0];
+
+    // Cuando el usuario haga clic en el botón, muestra el pop-up
+    botonPresupuestar.onclick = function() {
+        popup.style.display = 'block';
+    }
+
+    // Cuando el usuario haga clic en <span> (x), cierra el pop-up
+    span.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    // Cuando el usuario haga clic fuera del pop-up, cierra el pop-up
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+
+    // Función para cerrar el pop-up
+    function cerrarPopupFormulario() {
+        popup.style.display = 'none';
+    }
+});
+</script>
